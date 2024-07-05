@@ -7,14 +7,6 @@ import { useState } from "react";
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
-  const handlePrev = () => {
-    setPokemonIndex(pokemonIndex - 1)
-  }
-  const handleNext = () => {
-    setPokemonIndex(pokemonIndex + 1)
-  }
-
-  
   const pokemonList = [
     {
       name: "bulbasaur",
@@ -48,10 +40,8 @@ function App() {
       
           <div>
           <NavBar 
-              currentIndex={pokemonIndex}
-              handlePrev={handlePrev}
-              handleNext={handleNext}
-              tabLength={pokemonList.length - 1} 
+              pokemonList={pokemonList}
+              setPokemonIndex={setPokemonIndex}
           />
           </div>
 
