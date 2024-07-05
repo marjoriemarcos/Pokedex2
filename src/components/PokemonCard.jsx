@@ -13,7 +13,7 @@ function PokemonCard({ pokemon }) {
                     </img>
                 }
 
-                <figcaption className={styles.title} >{pokemon.name}</figcaption>
+                <figcaption className={styles.title} > {pokemon.name}</figcaption>
             </figure>
             </div>
   }
